@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Path Finder</title>
+
+</head>
+
+<body>
+  <div class="modal">
+    <h3>How to play?</h3>
+    <p>You have to move the yellow block using the arrow keys and
+      your target is to reach the green block, the yellow block will stop only when it hits the red block or the
+      boundary of the arena, Avoid hitting the red blocks</p>
+    <div class="button" id="yes">Yes I Understood</div>
+
+  </div>
+  <div class="controllers">
+
+
+    <div>
+
+      <div class="arrow" id="up"><img src="ArrowUp.jpeg" alt="" /></div>
+    </div>
+    <div style="display:flex;justify-content:space-between">
+      <div class="lr" style="display:flex;gap:19px">
+        <div class="arrow" id="left"><img src="ArrowLeft.jpeg" alt="" /></div>
+        <div class="arrow" id="down"><img src="ArrowDown.jpeg" alt="" /></div>
+        <div class="arrow" id="right">
+          <img src="ArrowRight.jpeg" alt="" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="container2">
+
+    <div id="time">
+      <span class="txt"></span>
+      <span class="digit" id="min">
+        00</span>
+      <span class="txt">Min</span>
+      <span class="digit" id="sec">
+        00</span>
+      <span class="txt">Sec</span>
+      <span class="digit" id="count">
+        00</span>
+    </div>
+  </div>
+  <div id="container">
+
+  </div>
+  <div class="modal">
+    <p>
+
+      Congartulations!<br> You have completed the game in
+      <br><span id="myTime"></span>
+      <br>You are faster than <span id="fast"></span>% of the players.<br>
+    </p>
+    <div id="again" onclick="again()" class="button">Play Again</div>
+  </div>
+
+  <div class="modal">
+    <h2>Game Over</h2>
+    <div id="again" onclick="again()" class="button">Play Again</div>
+
+  </div>
+
+  <div id="overlay"></div>
+</body>
+<script src="index.js"></script>
+
+</html>
